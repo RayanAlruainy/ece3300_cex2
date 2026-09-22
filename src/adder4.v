@@ -13,10 +13,10 @@ module adder4(
 	      output [4:0] result);
    
 // add your code here -- you must use four instances of the full adder "fulladd", defined below
-wire cout0
-wire cout1
-wire cout2
-wire cout3
+wire cout0;
+wire cout1;
+wire cout2;
+wire cout3;
 
 	fulladd fa0(.x(a[0]),.y(b[0]), .cin(0), .sum(result[0]), .cout(cout0));
 	fulladd fa1(.x(a[1]),.y(b[1]), .cin(cout0), .sum(result[1]), .cout(cout1));
